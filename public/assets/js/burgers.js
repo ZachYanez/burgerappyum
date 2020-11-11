@@ -8,6 +8,8 @@ $(function() {
       devoured: newDevoured
     };
 
+    console.log(newDevoured)
+
     // Send the PUT request.
     $.ajax("/api/burgers/" + id, {
       type: "PUT",
