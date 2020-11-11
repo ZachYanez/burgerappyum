@@ -88,33 +88,17 @@ function printQuestionMarks(num) {
         cb(result);
       });
     },
-    // delete: (table, condition, cb) => {
-    //   const queryString = `DELETE FROM ${table} WHERE ${condition}`;
-    //   connection.query(queryString, (err, result) => {
-    //     if (err) {
-    //       throw err;
-    //     }
+    delete: (table, condition, cb) => {
+      const queryString = `DELETE FROM ${table} WHERE ${condition}`;
+      connection.query(queryString, (err, result) => {
+        if (err) {
+          throw err;
+        }
   
-    //     cb(result);
-    //   });
-    // }
+        cb(result);
+      });
+    }
   };
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
